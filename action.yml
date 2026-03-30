@@ -1,0 +1,11 @@
+name: 'Hello World'
+description: 'Greet someone'
+runs:
+  using: "composite"
+  steps:
+    - name: Print to Log
+      id: print-to-log
+      uses: actions/hello-world-javascript-action@ad41a6c27317e688719c813b0d6a25685a9bce54 # v1.1
+      with:
+        who-to-greet: "Marty"
+
